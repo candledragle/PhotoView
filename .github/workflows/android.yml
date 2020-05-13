@@ -20,4 +20,13 @@ jobs:
     - name: print env
       run: env
     - name: print Android SDK Home
-      run: echo $ANDROID_HOME
+      run: |
+         mkdir -p path/to/artifact
+         echo $ANDROID_HOME > path/to/artifact/world.txt
+   - name: upload
+      uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: path/to/artifact/world.txt
+      
+
