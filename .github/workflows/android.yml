@@ -2,9 +2,9 @@ name: Android CI
 
 on:
   push:
-    branches: [ sym_test ]
+    branches: [ master ]
   pull_request:
-    branches: [ sym_test ]
+    branches: [ master ]
 
 jobs:
   build:
