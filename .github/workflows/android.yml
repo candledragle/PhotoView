@@ -19,5 +19,5 @@ jobs:
         java-version: 1.8 
     - name: Build with Gradle
       run: ./gradlew build :sample:assembleDebug
-    -name: print Android SDK Home
+    - name: print Android SDK Home
       run: echo $ANDROID_HOME
